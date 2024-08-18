@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master_Page.master.cs" Inherits="ASP_project.Master_Page" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <!-- bootstrap css -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+     <!-- Datatable css -->
+    <link href="Datatables/css/dataTables.dataTables.min.css" rel="stylesheet" />
+    <!-- Font awsome css -->
+    <link href="Font%20awsome/fontawesome-web/css/all.css" rel="stylesheet" />
+
+    <!-- Bootstrap js-->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- jquery js -->
+    <script src="bootstrap/js/js%20script.js"></script>
+    <!-- Popper js-->
+    <script src="bootstrap/js/popper.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <!-- Navbar -->
+
+    <div>
+    <div id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+               <a class="navbar-brand" href="/HomePage.aspx"><img src="images/library_logo.png" width="40px" height="40px"/></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/HomePage.aspx">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/login.aspx">Login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                     </ul>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                   </li>
+                   </ul>
+                   <form class="d-flex" role="search">
+                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                     <button class="btn btn-outline-success" type="submit">Search</button>
+                   </form>
+                      <button class="btn " type="submit">Sign Up</button>
+                  </div>
+                </div>
+             </nav>
+        </div>
+    </div>
+    </div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+    </asp:ContentPlaceHolder>
+    <!-- Footer -->
+        <div class="card">
+  <div class="card-header">Quote</div>
+  <div class="card-body" style="background-color:aqua">
+    <blockquote class="blockquote mb-0">
+      <p>A well-known quote, contained in a blockquote element.</p>
+      <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
+  </div>
+    </div>
+</body>
+</html>

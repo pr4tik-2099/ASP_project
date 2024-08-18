@@ -1,0 +1,13 @@
+﻿body {
+    margin:0;
+    padding:0;
+}
+.heading {
+    background-color: magenta;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hd1 {
+    color: aqua;
+}
