@@ -7,14 +7,9 @@ using System.Web.UI.WebControls;
 
 namespace ASP_project
 {
-    public partial class Login : System.Web.UI.Page
+    public partial class Author : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void login_btn_Click(object sender, EventArgs e)
         {
 
         }

@@ -1,9 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master_Page.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="ASP_project.Login" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master_Page.Master" AutoEventWireup="true" CodeBehind="Admin_Login.aspx.cs" Inherits="ASP_project.WebForm2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="Login_Css.css" rel="stylesheet" />
+    <link href="Admin_login.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container">
+        <div class="container">
         <div class="row">
            <div class="col-md-6 mx-auto boxx">
               <div class="card-body">
@@ -19,7 +19,7 @@
                   <div class="row2">
                       <div class="col">
                           <center>
-                              <h3> USER LOGIN </h3>
+                              <h3> ADMIN LOGIN </h3>
                           </center>
                       </div>
                   </div>     
@@ -50,8 +50,8 @@
 
                           <div class="form-group l_btn">
                               <center>
-                                 <a href="Sign_Up_Page.aspx"> <input id="signup_btn" type="button" value="Sign Up" class="btn lbtn btn-info form-control"/> </a>
-                                  <asp:Button ID="login_btn" runat="server" Text="Login" class="btn lbtn btn-success form-control" OnClick="login_btn_Click" />
+                                 
+                                  <asp:Button ID="login_btn" runat="server" Text="Login" class="btn lbtn btn-success"/>
                               </center>
                           </div>
                     </form> 
@@ -62,4 +62,5 @@
            </div>
         </div>
     </div>
+
 </asp:Content>

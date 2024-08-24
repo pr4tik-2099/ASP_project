@@ -11,7 +11,7 @@ namespace ASP_project
 {
 
 
-    public partial class Login
+    public partial class WebForm2
     {
 
         /// <summary>

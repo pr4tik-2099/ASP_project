@@ -32,14 +32,14 @@
                             <div class="col col-md-6 form-floating mb-3 form-group">
                                     <asp:Label ID="name_lbl" runat="server" Text="Name"></asp:Label>
                                  <center>
-                                    <asp:TextBox ID="name_txt" runat="server" CssClass=" txt_l"></asp:TextBox>
+                                    <asp:TextBox ID="name_txt" runat="server" CssClass=" form-control border-info border-2"></asp:TextBox>
                                   </center>
                             </div>
 
                             <div class="col col-md-6  form-floating mb-3 form-group">
                                <asp:Label ID="email_lbl" runat="server" Text="Email ID"></asp:Label>
                                   <center>
-                                    <asp:TextBox ID="email_txt" runat="server" CssClass=" txt_l"></asp:TextBox>
+                                    <asp:TextBox ID="email_txt" runat="server" CssClass=" form-control border-info border-2"></asp:TextBox>
                                   </center>
                             </div>
                         </div>
@@ -48,14 +48,14 @@
                             <div class="col col-md-6 form-floating mb-3 form-group">
                                 <asp:Label ID="Label1" runat="server" Text="Date of Birth"></asp:Label>
                                   <center>                  
-                                      <asp:TextBox ID="dob_txt" runat="server" CssClass="txt_l" TextMode="DateTime" placeholder="dd-mm-yyyy"></asp:TextBox>
+                                      <asp:TextBox ID="dob_txt" runat="server" CssClass=" form-control border-info border-2" TextMode="DateTime" placeholder="dd-mm-yyyy"></asp:TextBox>
                                   </center>
                             </div>
 
                             <div class="col col-md-6  form-floating mb-3 form-group">
                                     <asp:Label ID="Label2" runat="server" Text="Contact Number"></asp:Label>
                                   <center>
-                                      <asp:TextBox ID="num_txt" runat="server" CssClass="txt_l" TextMode="Number"></asp:TextBox>
+                                      <asp:TextBox ID="num_txt" runat="server" CssClass="form-control border-info border-2" TextMode="Number"></asp:TextBox>
                                   </center>
                             </div>
 
@@ -66,7 +66,7 @@
                             <div class="col col-md-4 form-floating mb-3 form-group">
                                 <asp:Label ID="state_lbl" runat="server" Text="State"></asp:Label>   
                                 <center>
-                                    <asp:DropDownList ID="State_list" runat="server" CssClass="txt_box">
+                                    <asp:DropDownList ID="State_list" runat="server" CssClass="drp_box form-control border-info border-2">
 
                                          <asp:listItem Text="select" Value="Select" />
                                          <asp:listItem Text="West Bengal" Value="West Bengal" />
@@ -82,14 +82,14 @@
                             <div class="col col-md-4  form-floating mb-3 form-group">
                                <asp:Label ID="Label4" runat="server" Text="City"></asp:Label>
                                   <center>
-                                    <asp:TextBox ID="TextBox2" runat="server" CssClass="txt_box"></asp:TextBox>
+                                    <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control border-info border-2"></asp:TextBox>
                                   </center>
                             </div>
 
                              <div class="col col-md-4  form-floating mb-3 form-group">
                                   <asp:Label ID="Label5" runat="server" Text="Pin code"></asp:Label>
                                   <center>
-                                      <asp:TextBox ID="TextBox3" runat="server" CssClass="txt_box" TextMode="Number"></asp:TextBox>
+                                      <asp:TextBox ID="TextBox3" runat="server" CssClass="form-control border-info border-2" TextMode="Number"></asp:TextBox>
                                   </center>
                             </div>
 
@@ -100,7 +100,7 @@
                             <div class="col col-md-12 form-floating mb-3 form-group">
                                   
                                     <asp:Label ID="Label6" runat="server" Text="Address"></asp:Label>
-                                    <asp:TextBox ID="address_txt" runat="server" CssClass="" TextMode="MultiLine" Style="width:1100px"></asp:TextBox>
+                                    <asp:TextBox ID="address_txt" runat="server" CssClass="form-control border-info border-2" TextMode="MultiLine" ></asp:TextBox>
                                 
                             </div>
                         </div>
@@ -112,26 +112,26 @@
                             <div class="col col-md-6 form-floating mb-3 form-group">
                                     <asp:Label ID="Label3" runat="server" Text="UserName"></asp:Label>
                                  <center>
-                                    <asp:TextBox ID="uname_txt" runat="server" CssClass=" txt_l"></asp:TextBox>
+                                    <asp:TextBox ID="uname_txt" runat="server" CssClass=" form-control border-info border-2"></asp:TextBox>
                                   </center>
                             </div>
 
                             <div class="col col-md-6  form-floating mb-3 form-group">
                                <asp:Label ID="Label7" runat="server" Text="Password"></asp:Label>
                                   <center>
-                                      <asp:TextBox ID="upass_txt" runat="server" CssClass=" txt_l" TextMode="Password"></asp:TextBox>
+                                      <asp:TextBox ID="upass_txt" runat="server" CssClass=" form-control border-info border-2" TextMode="Password"></asp:TextBox>
                                   </center>
                             </div>
                         </div>
                         
                           <div class="form-group l_btn">
                               <center>
-                                  <asp:Button ID="login_btn" runat="server" Text="Sign Up" class="btn lbtn btn-success"/>
+                                  <asp:Button ID="login_btn" runat="server" Text="Sign Up" class="btn lbtn btn-success border-info border-2"/>
                               </center>
                           </div>
 
-                    </form>
-
+                   
+                       </form>
                     </div>
                 </div>
             </div>

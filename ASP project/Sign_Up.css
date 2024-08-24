@@ -2,13 +2,8 @@
     margin:0;
     padding:0;
 }
-.txt_box{
-    width:340px;
-}
 
-.txt_l{
-    width:520px;
-}
+
 
 .row1{
     margin-bottom:20px;
@@ -18,10 +13,6 @@
     margin-bottom:20px;
 }
 
-
-#State_list{
-    height:29px;
-}
 
 .lbtn{
     width:400px;

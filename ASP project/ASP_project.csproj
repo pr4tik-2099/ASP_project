@@ -67,6 +67,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin_login.css" />
+    <Content Include="Author .aspx" />
+    <Content Include="book_issuing.aspx" />
     <Content Include="bootstrap\css\bootstrap.min.css" />
     <Content Include="bootstrap\js\bootstrap.min.js" />
     <Content Include="bootstrap\js\js script.js" />
@@ -2161,8 +2164,10 @@
     <Content Include="Font awsome\fontawesome-web\svgs\solid\z.svg" />
     <Content Include="Home_Page_Style.css" />
     <Content Include="images\1360627.png" />
+    <Content Include="images\books %281%29.png" />
     <Content Include="images\books.png" />
     <Content Include="images\boy.png" />
+    <Content Include="images\key.png" />
     <Content Include="images\landing-page.png" />
     <Content Include="images\library.png" />
     <Content Include="images\online-education.png" />
@@ -2172,12 +2177,30 @@
     <Content Include="images\work-in-progress.png" />
     <Content Include="Login.aspx" />
     <Content Include="Login_Css.css" />
+    <Content Include="member_info.aspx" />
     <Content Include="Sign_Up_Page.aspx" />
     <Content Include="Sign_Up.css" />
+    <Content Include="User_Profile.aspx" />
+    <Content Include="Use_Profile.css" />
     <Content Include="Web.config" />
     <Content Include="HomePage.aspx" />
+    <Content Include="Admin_Login.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Author .aspx.cs">
+      <DependentUpon>Author .aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Author .aspx.designer.cs">
+      <DependentUpon>Author .aspx</DependentUpon>
+    </Compile>
+    <Compile Include="book_issuing.aspx.cs">
+      <DependentUpon>book_issuing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="book_issuing.aspx.designer.cs">
+      <DependentUpon>book_issuing.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2191,6 +2214,13 @@
     </Compile>
     <Compile Include="Master_Page.Master.designer.cs">
       <DependentUpon>Master_Page.Master</DependentUpon>
+    </Compile>
+    <Compile Include="member_info.aspx.cs">
+      <DependentUpon>member_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="member_info.aspx.designer.cs">
+      <DependentUpon>member_info.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="HomePage.aspx.cs">
@@ -2206,6 +2236,20 @@
     </Compile>
     <Compile Include="Sign_Up_Page.aspx.designer.cs">
       <DependentUpon>Sign_Up_Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Login.aspx.cs">
+      <DependentUpon>Admin_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Login.aspx.designer.cs">
+      <DependentUpon>Admin_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Profile.aspx.cs">
+      <DependentUpon>User_Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Profile.aspx.designer.cs">
+      <DependentUpon>User_Profile.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
