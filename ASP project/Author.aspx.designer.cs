@@ -15,22 +15,22 @@ namespace ASP_project
     {
 
         /// <summary>
-        /// name_lbl control.
+        /// autId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label name_lbl;
+        protected global::System.Web.UI.WebControls.Label autId;
 
         /// <summary>
-        /// name_txt control.
+        /// authorId_txt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox name_txt;
+        protected global::System.Web.UI.WebControls.TextBox authorId_txt;
 
         /// <summary>
         /// go control.
@@ -42,49 +42,49 @@ namespace ASP_project
         protected global::System.Web.UI.WebControls.Button go;
 
         /// <summary>
-        /// email_lbl control.
+        /// autname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label email_lbl;
+        protected global::System.Web.UI.WebControls.Label autname;
 
         /// <summary>
-        /// email_txt control.
+        /// autherName_txt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox email_txt;
+        protected global::System.Web.UI.WebControls.TextBox autherName_txt;
 
         /// <summary>
-        /// Button1 control.
+        /// add_btn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button add_btn;
 
         /// <summary>
-        /// login_btn control.
+        /// update_btn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button login_btn;
+        protected global::System.Web.UI.WebControls.Button update_btn;
 
         /// <summary>
-        /// Button2 control.
+        /// delete_btn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Button delete_btn;
 
         /// <summary>
         /// user_gridview control.

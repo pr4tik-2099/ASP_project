@@ -114,13 +114,13 @@ namespace ASP_project
         protected global::System.Web.UI.WebControls.Label Label4;
 
         /// <summary>
-        /// TextBox2 control.
+        /// city_txt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox city_txt;
 
         /// <summary>
         /// Label5 control.
@@ -132,13 +132,13 @@ namespace ASP_project
         protected global::System.Web.UI.WebControls.Label Label5;
 
         /// <summary>
-        /// TextBox3 control.
+        /// pincode_txt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.TextBox pincode_txt;
 
         /// <summary>
         /// Label6 control.
@@ -195,12 +195,12 @@ namespace ASP_project
         protected global::System.Web.UI.WebControls.TextBox upass_txt;
 
         /// <summary>
-        /// login_btn control.
+        /// signup_btn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button login_btn;
+        protected global::System.Web.UI.WebControls.Button signup_btn;
     }
 }

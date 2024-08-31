@@ -26,7 +26,7 @@
                             </div>
                         </div>
 
-                     <form runat="server">
+                     
                         <div class="row row3">
                           
                             <div class="col col-md-6 form-floating mb-3 form-group">
@@ -48,7 +48,7 @@
                             <div class="col col-md-6 form-floating mb-3 form-group">
                                 <asp:Label ID="Label1" runat="server" Text="Date of Birth"></asp:Label>
                                   <center>                  
-                                      <asp:TextBox ID="dob_txt" runat="server" CssClass=" form-control border-info border-2" TextMode="DateTime" placeholder="dd-mm-yyyy"></asp:TextBox>
+                                      <asp:TextBox ID="dob_txt" runat="server" CssClass=" form-control border-info border-2" TextMode="Date" placeholder="dd-mm-yyyy"></asp:TextBox>
                                   </center>
                             </div>
 
@@ -82,14 +82,14 @@
                             <div class="col col-md-4  form-floating mb-3 form-group">
                                <asp:Label ID="Label4" runat="server" Text="City"></asp:Label>
                                   <center>
-                                    <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control border-info border-2"></asp:TextBox>
+                                      <asp:TextBox ID="city_txt" runat="server" CssClass="form-control border-info border-2"></asp:TextBox>
                                   </center>
                             </div>
 
                              <div class="col col-md-4  form-floating mb-3 form-group">
                                   <asp:Label ID="Label5" runat="server" Text="Pin code"></asp:Label>
                                   <center>
-                                      <asp:TextBox ID="TextBox3" runat="server" CssClass="form-control border-info border-2" TextMode="Number"></asp:TextBox>
+                                      <asp:TextBox ID="pincode_txt" runat="server" CssClass="form-control border-info border-2" TextMode="Number"></asp:TextBox>
                                   </center>
                             </div>
 
@@ -126,12 +126,10 @@
                         
                           <div class="form-group l_btn">
                               <center>
-                                  <asp:Button ID="login_btn" runat="server" Text="Sign Up" class="btn lbtn btn-success border-info border-2"/>
+                                  <asp:Button ID="signup_btn" runat="server" Text="Sign Up" class="btn lbtn btn-success border-info border-2" OnClick="signup_btn_Click" />
                               </center>
                           </div>
 
-                   
-                       </form>
                     </div>
                 </div>
             </div>

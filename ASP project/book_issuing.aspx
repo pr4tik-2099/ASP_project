@@ -3,7 +3,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <div class="con container-fluid">
-        <form runat="server">
         <div class="row">
 
             <div class="col-md-5 mx-auto">
@@ -124,7 +123,6 @@
 
 
         </div>
-      </form>
     </div>
 
 </asp:Content>

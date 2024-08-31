@@ -11,7 +11,7 @@
                   <div class="row1">
                       <div class="col">
                           <center>
-                              <img src="images/boy.png" width="150" />
+                            <img src="images/settings.png" height="150"/>
                           </center>
                       </div>
                   </div>
@@ -26,7 +26,6 @@
 
                   <div class="row3">
 
-                      <form runat="server">
 
                         <div class="col form-floating mb-3">
                           <div class="form-group">
@@ -51,10 +50,9 @@
                           <div class="form-group l_btn">
                               <center>
                                  
-                                  <asp:Button ID="login_btn" runat="server" Text="Login" class="btn lbtn btn-success"/>
+                                  <asp:Button ID="login_btn" runat="server" Text="Login" class="btn lbtn btn-success" OnClick="login_btn_Click" />
                               </center>
-                          </div>
-                    </form> 
+                          </div> 
                       
                  </div>
 

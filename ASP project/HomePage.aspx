@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="heading">
-        <h1 id="hd1" class="display-3">ONLINE LIBRARY</h1>
+        <h1 id="hd1" class="display-3 head">ONLINE LIBRARY</h1>
     </div>
 
     <div class="container">

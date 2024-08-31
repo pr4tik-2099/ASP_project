@@ -12,6 +12,8 @@
     <!-- Font awsome css -->
     <link href="Font%20awsome/fontawesome-web/css/all.css" rel="stylesheet" />
 
+    <link href="Master.css" rel="stylesheet" />
+
     <!-- Bootstrap js-->
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <!-- jquery js -->
@@ -23,26 +25,26 @@
 </head>
 <body>
     <!-- Navbar -->
-
+    <form runat="server">
     <div>
     <div id="form1" runat="server">
         <div>
             <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
             <div class="container-fluid">
-               <a class="navbar-brand" href="/HomePage.aspx"><img src="images/online-education.png" width="40"/></a>
+                <asp:LinkButton ID="LinkButton1" runat="server" class="navbar-brand" href="/HomePage.aspx"><img src="images/online-education.png" width="40"/></asp:LinkButton>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/HomePage.aspx">Home</a>
+                         <asp:LinkButton ID="LinkButton2" class="nav-link active" runat="server" aria-current="page" href="/HomePage.aspx">Home</asp:LinkButton>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="/login.aspx">Login</a>
+                        <asp:LinkButton ID="AboutUs_btn" class="nav-link" runat="server">About Us</asp:LinkButton>
                     </li>
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Terms</a>
                       <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Action</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -54,11 +56,23 @@
                      <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                    </li>
                    </ul>
-                   <form class="d-flex" role="search">
-                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                     <button class="btn btn-outline-info" type="submit">Search</button>
-                   </form>
-                      <button class="btn " type="submit">Sign Up</button>
+                      <ul class="navbar-nav">
+                          <li>
+                              <asp:LinkButton ID="viewBooks_btn" runat="server" class="nav-link active">View Books</asp:LinkButton>
+                          </li>
+                          <li>
+                              <asp:LinkButton ID="login_btn" runat="server" class="nav-link active" href="Login.aspx">User Login</asp:LinkButton>
+                          </li>
+                          <li>
+                              <asp:LinkButton ID="signUp_btn" runat="server" class="nav-link active" href="Sign_Up_Page.aspx">Sign Up</asp:LinkButton>
+                          </li>
+                          <li>
+                              <asp:Button ID="logout_btn" class="nav-link active" runat="server" Text="Logout" OnClick="logout_btn_Click1" Visible="False" />
+                          </li>
+                          <li>
+                              <asp:LinkButton runat="server" class="nav-link active" href="" ID="user_name" Visible="False">Hello User</asp:LinkButton>
+                          </li>
+                      </ul>
                   </div>
                 </div>
              </nav>
@@ -69,14 +83,34 @@
         
     </asp:ContentPlaceHolder>
     <!-- Footer -->
-        <div class="card">
-  <div class="card-header">Quote</div>
-  <div class="card-body" style="background-color:aqua">
-    <blockquote class="blockquote mb-0">
-      <p>A well-known quote, contained in a blockquote element.</p>
-      <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-    </blockquote>
-  </div>
-    </div>
+<footer class="">
+    <div class="card foot">
+        <div class="card-body" style="">
+            <div class="row">
+               
+                <center>
+                    <asp:LinkButton ID="admin_btn" runat="server" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover footerlinks" OnClick="admin_btn_Click">Admin Login</asp:LinkButton> &nbsp &nbsp
+                   
+                    <asp:LinkButton ID="authorMag_btn" runat="server" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover footerlinks" OnClick="authorMag_btn_Click" Visible="False">Author Management</asp:LinkButton> &nbsp &nbsp
+
+                    <asp:LinkButton ID="pubMag_btn" runat="server" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover footerlinks" OnClick="pubMag_btn_Click" Visible="False">Publisher Management</asp:LinkButton>&nbsp &nbsp
+
+                    <asp:LinkButton ID="bookInv_btn" runat="server" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover footerlinks" OnClick="bookInv_btn_Click" Visible="False">Book Inventory</asp:LinkButton>&nbsp &nbsp
+
+                    <asp:LinkButton ID="bookIssu_btn" runat="server" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover footerlinks" OnClick="bookIssu_btn_Click" Visible="False">Book Issuing</asp:LinkButton>&nbsp &nbsp
+
+                    <asp:LinkButton ID="memMag_btn" runat="server" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover footerlinks" OnClick="memMag_btn_Click" Visible="False">Member Management</asp:LinkButton> &nbsp &nbsp
+                  </center>  
+                </div>
+                <div div="row">
+                  <div class="row text-center" style="background-color:aqua;color: black;font-size:18px;width:auto;margin-top:15px">
+                    <blockquote>@All Rights where reserved</blockquote>
+                  </div>
+               </div>
+
+        </div>
+     </div>   
+</footer>
+</form>
 </body>
 </html>

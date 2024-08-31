@@ -3,11 +3,18 @@
     padding:0;
 }
 .heading {
+  
     background-color: magenta;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #hd1 {
-    color: aqua;
+    color: Aqua; 
+}
+
+.head
+{
+    font-weight:1000;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

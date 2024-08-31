@@ -3,7 +3,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
        <div class="con container-fluid">
-       <form runat="server">
         <div class="row">
 
             <div class="col-md-5 mx-auto">
@@ -32,10 +31,10 @@
                         <div class="row row3">
                           
                             <div class="col col-md-3 form-floating mb-3 form-group">
-                                    <asp:Label ID="member_id" runat="server" Text="Member_ID"></asp:Label>
+                                    <asp:Label ID="member_id" runat="server" Text="Member ID"></asp:Label>
                                   <div class="input-group">
-                                       <asp:TextBox ID="memberid_txt" runat="server" CssClass=" txt_l form-control"></asp:TextBox>
-                                      <asp:Button ID="go_btn" runat="server" Text="GO" class="btn btn-outline-info" />
+                                       <asp:TextBox ID="memberid_txt" runat="server" CssClass=" txt_l form-control border-dark border-2"></asp:TextBox>
+                                      <asp:Button ID="go_btn" runat="server" Text="GO" class="btn btn-outline-info border-2" />
                                   </div>
                                                
                             </div>
@@ -51,9 +50,9 @@
                               <asp:Label ID="actStatus" runat="server" Text="Account Status"></asp:Label>
                                  <div class="input-group">
                                      <asp:TextBox ID="actStatus_txt" runat="server" CssClass=" txt_l form-control" ReadOnly="True"></asp:TextBox>
-                                   <asp:LinkButton ID="LinkButton1" runat="server" CssClass="btn btn-outline-success "><i class="fa-regular fa-circle-check"></i></asp:LinkButton>
-                                   <asp:LinkButton ID="LinkButton2" runat="server" CssClass="btn btn-outline-warning "><i class="fa-solid fa-spinner"></i></asp:LinkButton>
-                                   <asp:LinkButton ID="LinkButton3" runat="server" CssClass="btn btn-outline-danger "><i class="fa-solid fa-xmark"></i></asp:LinkButton>
+                                   <asp:LinkButton ID="LinkButton1" runat="server" CssClass="btn btn-outline-success border-2"><i class="fa-regular fa-circle-check"></i></asp:LinkButton>
+                                   <asp:LinkButton ID="LinkButton2" runat="server" CssClass="btn btn-outline-warning border-2"><i class="fa-solid fa-spinner"></i></asp:LinkButton>
+                                   <asp:LinkButton ID="LinkButton3" runat="server" CssClass="btn btn-outline-danger border-2"><i class="fa-solid fa-xmark"></i></asp:LinkButton>
                                  </div>
                            </div>
                         </div>
@@ -156,9 +155,7 @@
             </div>
 
          
-
         </div>
-       </form>
     </div>
 
 </asp:Content>

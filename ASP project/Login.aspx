@@ -26,7 +26,7 @@
 
                   <div class="row3">
 
-                      <form runat="server">
+                      
 
                         <div class="col form-floating mb-3">
                           <div class="form-group">
@@ -54,7 +54,7 @@
                                   <asp:Button ID="login_btn" runat="server" Text="Login" class="btn lbtn btn-success form-control" OnClick="login_btn_Click" />
                               </center>
                           </div>
-                    </form> 
+                    
                       
                  </div>
 
