@@ -11,7 +11,7 @@
                   <div class="row1">
                       <div class="col">
                           <center>
-                              <img src="images/boy.png" width="150" />
+                              <img src="images/boy.png" width="150" alt=""/>
                           </center>
                       </div>
                   </div>

@@ -11,23 +11,31 @@
     <link href="Datatables/css/dataTables.dataTables.min.css" rel="stylesheet" />
     <!-- Font awsome css -->
     <link href="Font%20awsome/fontawesome-web/css/all.css" rel="stylesheet" />
-
+    <!-- Extra css -->
     <link href="Master.css" rel="stylesheet" />
-
-    <!-- Bootstrap js-->
+ 
+    <!-- jQuery Link -->
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+    <!-- Bootstrap js -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <!-- jquery js -->
+    <!-- jQuery js -->
     <script src="bootstrap/js/js%20script.js"></script>
-    <!-- Popper js-->
+    <!-- Popper js -->
     <script src="bootstrap/js/popper.min.js"></script>
+     <!-- Datatable js -->
+   <script src="Datatables/js/dataTables.min.js"></script>
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <!-- Navbar -->
-    <form runat="server">
+    <form id="form1" runat="server">
     <div>
-    <div id="form1" runat="server">
+    <div>
         <div>
             <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
             <div class="container-fluid">
@@ -82,6 +90,7 @@
     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
     </asp:ContentPlaceHolder>
+
     <!-- Footer -->
 <footer class="">
     <div class="card foot">
@@ -101,6 +110,7 @@
 
                     <asp:LinkButton ID="memMag_btn" runat="server" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover footerlinks" OnClick="memMag_btn_Click" Visible="False">Member Management</asp:LinkButton> &nbsp &nbsp
                   </center>  
+
                 </div>
                 <div div="row">
                   <div class="row text-center" style="background-color:aqua;color: black;font-size:18px;width:auto;margin-top:15px">

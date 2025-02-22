@@ -36,14 +36,14 @@ namespace ASP_project
                     {
                         Session["role"] = "user";
                         Session["username"] = dr["username"].ToString();
-
+                        Response.Redirect("HomePage.aspx");
 
                     }
                     else
                     {
                         Response.Write("<script>alert('Incorrect'); </script>");
                     }
-                    Response.Redirect("HomePage.aspx");
+                    
                 }
                 else
                 {

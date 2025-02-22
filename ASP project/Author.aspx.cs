@@ -18,16 +18,14 @@ namespace ASP_project
         {
             
         }
-        bool checkEmptyTextbox()
+        private bool checkEmptyTextbox()
         {
+            bool IsEmpty = false;
             if (authorId_txt.Text == "" || autherName_txt.Text == "")
             {
-                return true;
+                IsEmpty = true;
             }
-            else
-            {
-                return false;
-            }
+            return IsEmpty;
         }
         protected void add_btn_Click(object sender, EventArgs e)
         {
@@ -42,6 +40,7 @@ namespace ASP_project
             else
             {
                 AddAuthor();
+                author_gridview.DataBind();
             }
            
         }
@@ -107,6 +106,8 @@ namespace ASP_project
             if(CheckAuthorExist())
             {
                 UpdateAuthor();
+                author_gridview.DataBind();
+
             }
             else if (checkEmptyTextbox())
             {
@@ -146,6 +147,8 @@ namespace ASP_project
             if(CheckAuthorExist()) 
             {
                 DeleteAuthor();
+                author_gridview.DataBind();
+
             }
             else if(checkEmptyTextbox())
             {
@@ -178,6 +181,36 @@ namespace ASP_project
             catch (Exception ex)
             {
                 Response.Write("<script> alert('" + ex.Message.ToString() + "')</script>");
+            }
+        }
+
+        protected void go_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(sqlcon);
+            SqlCommand cmd = new SqlCommand();
+            try
+            {
+                conn.Open();
+                string sqlquery = "select * from author where author_Id ='" + authorId_txt.Text.ToString() + "' ";
+                cmd = new SqlCommand(sqlquery, conn);
+                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+
+                if (dt.Rows.Count >= 1)
+                {
+                    autherName_txt.Text = dt.Rows[0][1].ToString();
+                }
+                else
+                {
+                    Response.Write("<script> alert('Author ID is Invalid')</script>");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Response.Write("<script> alert('" + ex.Message.ToString() + "')</script>");
+
             }
         }
     }

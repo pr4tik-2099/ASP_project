@@ -5,7 +5,7 @@
        <div class="con container-fluid">
         <div class="row">
 
-            <div class="col-md-5 mx-auto">
+            <div class="col-md-6 mx-auto">
                 
                 <div class="card">
                     <div class="card-body">
@@ -13,7 +13,7 @@
                         <div class="row row1">
                             <div class="col">
                                 <center>
-                                  <img src="images/document%20(1).png" height="90"/>
+                                  <img src="images/document%20(1).png" height="90" alt=""/>
                                 </center>
                             </div>
                         </div>
@@ -53,8 +53,8 @@
                           <div class="form-group l_btn">
                              <div class="col-15">
                                <center>
-                                  <asp:Button ID="add_btn" runat="server" Text="Add" class="btn lbtn btn-dark"/>
-                                  <asp:Button ID="update_btn" runat="server" Text="Update" class="btn lbtn btn-info"/>
+                                   <asp:Button ID="add_btn" runat="server" Text="Add" class="btn lbtn btn-dark" OnClick="add_btn_Click" />
+                                   <asp:Button ID="update_btn" runat="server" Text="Update" class="btn lbtn btn-info" OnClick="update_btn_Click" />
                                   <asp:Button ID="delete_btn" runat="server" Text="Delete" class="btn lbtn btn-danger"/>
                                </center>
                              </div>
@@ -66,7 +66,7 @@
                 </div>
             </div>
 
-            <div class="col-md-7">
+            <div class="col-md-6">
                   <div class="card">
                     <div class="card-body">
 
@@ -81,8 +81,14 @@
                         </div>
 
                          <div class="row row3">
+                             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:E_libraryConnectionString2 %>" ProviderName="<%$ ConnectionStrings:E_libraryConnectionString2.ProviderName %>" SelectCommand="SELECT * FROM [publisher]"></asp:SqlDataSource>
                             <div class="col">
-                                <asp:GridView ID="user_gridview" CssClass="table table-dark table-bordered border-info" runat="server"></asp:GridView>
+                                <asp:GridView ID="user_gridview" CssClass="table table-dark table-bordered border-info" runat="server" AutoGenerateColumns="False" DataKeyNames="publisher_Id" DataSourceID="SqlDataSource1" AllowPaging="True" AllowSorting="True">
+                                    <Columns>
+                                        <asp:BoundField DataField="publisher_Id" HeaderText="publisher_Id" ReadOnly="True" SortExpression="publisher_Id"></asp:BoundField>
+                                        <asp:BoundField DataField="publisher_Name" HeaderText="publisher_Name" SortExpression="publisher_Name"></asp:BoundField>
+                                    </Columns>
+                                </asp:GridView>
                             </div>
                         </div>
 

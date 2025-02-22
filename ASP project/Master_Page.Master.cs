@@ -86,7 +86,6 @@ namespace ASP_project
         {
             Session["role"] = null;
             user_name.Visible = false;
-            login_btn.Visible = false;
             Session["username"] = null;
             login_btn.Visible = true;
             admin_btn.Visible = true;

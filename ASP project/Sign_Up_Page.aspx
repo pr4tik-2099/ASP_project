@@ -13,7 +13,7 @@
                         <div class="row row1">
                             <div class="col">
                                 <center>
-                                  <img src="images/profile.png" width="120"/>
+                                  <img src="images/profile.png" width="120" alt=""/>
                                 </center>
                             </div>
                         </div>
@@ -55,7 +55,7 @@
                             <div class="col col-md-6  form-floating mb-3 form-group">
                                     <asp:Label ID="Label2" runat="server" Text="Contact Number"></asp:Label>
                                   <center>
-                                      <asp:TextBox ID="num_txt" runat="server" CssClass="form-control border-info border-2" TextMode="Number"></asp:TextBox>
+                                      <asp:TextBox ID="num_txt" runat="server" CssClass="form-control border-info border-2" TextMode="Number" ></asp:TextBox>
                                   </center>
                             </div>
 

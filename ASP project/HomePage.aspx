@@ -16,19 +16,19 @@
               <div class="row" id="row2">
                 <div class="col-md-4">
                     <center>
-                        <img src="images/library.png" height="150" width="150"/>
+                        <img src="images/library.png" height="150" width="150" alt=""/>
                         <h5>100+ Books Available</h5>
                     </center>
                 </div>
                 <div class="col-md-4">
                     <center>
-                        <img src="images/landing-page.png" height="150" width="150"/>
+                        <img src="images/landing-page.png" height="150" width="150" alt=""/>
                         <h5>Search Books</h5>
                     </center>
                 </div>
                  <div class="col-md-4">
                    <center>
-                       <img src="images/work-in-progress.png" height="150" width="150"/>
+                       <img src="images/work-in-progress.png" height="150" width="150" alt=""/>
                      <h5>Optimized Website</h5>
                    </center>
                  </div>
